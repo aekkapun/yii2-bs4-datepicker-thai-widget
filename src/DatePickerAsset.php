@@ -3,7 +3,7 @@
  * @copyright Copyright (c) 2018 Akaranan Naree
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-namespace karatae99\datepicker;
+namespace littleboy\datepicker;
 
 use yii\web\AssetBundle;
 
@@ -26,6 +26,6 @@ class DatePickerAsset extends AssetBundle
     ];
 
     public $depends = [
-        'yii\bootstrap\BootstrapPluginAsset'
+        'yii\bootstrap4\BootstrapPluginAsset'
     ];
 }

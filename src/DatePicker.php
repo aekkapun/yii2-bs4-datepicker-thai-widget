@@ -3,7 +3,7 @@
  * @copyright Copyright (c) 2018 Akaranan Naree
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-namespace karatae99\datepicker;
+namespace littleboy\datepicker;
 
 use Yii;
 use yii\helpers\Html;
@@ -89,12 +89,12 @@ class DatePicker extends InputWidget
 
         // @codeCoverageIgnoreStart
         if ($this->language !== null && $this->language !== 'en') {
-            $this->clientOptions['language'] = $this->language;            
+            $this->clientOptions['language'] = $this->language;
 
-            if ($this->language === 'th') { 
+            if ($this->language === 'th') {
                 DateRangePickerAsset::register($view)->js[] = 'js/bootstrap-datepicker-thai.js';
-            }                        
-            
+            }
+
             DatePickerLanguageAsset::register($view)->js[] = 'bootstrap-datepicker.' . $this->language . '.min.js';
         } else {
             DatePickerAsset::register($view);
